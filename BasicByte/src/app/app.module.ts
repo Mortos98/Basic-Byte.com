@@ -5,20 +5,24 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeadderComponent } from './headder/headder.component';
 import { DarkToggleComponent } from './dark-toggle/dark-toggle.component';
-import { MenuNavigationComponent } from './menu-navigation/menu-navigation.component';
-import { LogoComponent } from './logo/logo.component';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeadderComponent,
-    DarkToggleComponent,
-    MenuNavigationComponent,
-    LogoComponent
+    DarkToggleComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ServiceWorkerModule.register('ngsw-worker.js', {
+      enabled: environment.production,
+      // Register the ServiceWorker as soon as the app is stable
+      // or after 30 seconds (whichever comes first).
+      registrationStrategy: 'registerWhenStable:30000'
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
