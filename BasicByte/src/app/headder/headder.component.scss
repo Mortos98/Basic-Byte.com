@@ -1,6 +1,26 @@
 @import '../../styles.scss';
 .headder{
   width:100vw;
+  height: 10vh;
   background-color: var(--header);
   box-shadow: 0px 10px 8px var(--shadow);
+}
+
+.topnav-centered{
+  text-align: center;
+  height: 10vh;
+  line-height: 10vh;
+}
+
+.brand-logo{
+  width:4em;
+  margin-left: 5vw;
+}
+
+a{
+  font-family: 'Archivo Narrow', sans-serif;
+  font-weight: 400;
+  color: var(--text);
+  font-size: 2em;
+  margin-left: 5vw;
 }
