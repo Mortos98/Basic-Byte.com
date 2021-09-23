@@ -7,13 +7,16 @@
 }
 
 .topnav-centered{
-  text-align: center;
+  // text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
   height: 10vh;
   line-height: 10vh;
 }
 
 .brand-logo{
-  width:4em;
+  width:10vh;
   margin-left: 5vw;
 }
 
@@ -21,6 +24,6 @@ a{
   font-family: 'Archivo Narrow', sans-serif;
   font-weight: 400;
   color: var(--text);
-  font-size: 2em;
+  font-size: 5vh;
   margin-left: 5vw;
 }
