@@ -4,15 +4,15 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeadderComponent } from './headder/headder.component';
-import { DarkToggleComponent } from './dark-toggle/dark-toggle.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
+import { LogoComponent } from './logo/logo.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeadderComponent,
-    DarkToggleComponent
+    LogoComponent
   ],
   imports: [
     BrowserModule,
