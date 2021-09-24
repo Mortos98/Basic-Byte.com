@@ -4,10 +4,21 @@
   height: 10vh;
   background-color: var(--header);
   box-shadow: 0px 10px 8px var(--shadow);
+  top: 0px;
+  position: fixed;
 }
 
-.topnav-centered{
-  // text-align: center;
+.container {
+  display: flex;
+}
+
+.item {
+  height: 10vh;
+  width: 15vw; /* A fixed width as the default */
+}
+
+.item-center {
+  flex-grow: 1; /* Set the middle element to grow and stretch */
   justify-content: center;
   align-items: center;
   display: flex;
@@ -15,9 +26,13 @@
   line-height: 10vh;
 }
 
+.item + .item {
+  margin-left: 2%;
+}
+
 .brand-logo{
   width:10vh;
-  margin-left: 5vw;
+  margin: 2.5vw;
 }
 
 a{
@@ -25,5 +40,13 @@ a{
   font-weight: 400;
   color: var(--text);
   font-size: 5vh;
-  margin-left: 5vw;
+  margin: 2.5vw;
+}
+
+a :hover{
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
+  color: var(--header-text-accent);
 }

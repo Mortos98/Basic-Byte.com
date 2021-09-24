@@ -77,11 +77,8 @@ input{
   --shadow: var(--shadow-light);
   --background: var(--light);
   --header: var(--light);
+  --header-text-accent: var(--header-800);
   --text: var(--dark);
-  --logo-secondary: var(--primary-200);
-  --logo-primary: var(--primary-500);
-  --logo-text: var(--light);
-  --logo-shaddow: var(var(--shadow-light))
 }
 
 //dark theme
@@ -91,6 +88,7 @@ input{
     --shadow: var(--shadow-dark);
     --header: var(--header-200);
     --text: var(--light);
+    --header-text-accent: var(--header-200)
   }
 }
 
@@ -113,4 +111,8 @@ h1, h2, h3, h4, h5, h6{
 
 h1{
     font-size: 2em;
+}
+
+body{
+  height: 599vh;
 }

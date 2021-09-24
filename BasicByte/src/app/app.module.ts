@@ -6,13 +6,17 @@ import { AppComponent } from './app.component';
 import { HeadderComponent } from './headder/headder.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
+import { NewsComponent } from './news/news.component';
+import { SearchComponent } from './search/search.component';
 import { ProfileComponent } from './profile/profile.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeadderComponent,
-    ProfileComponent
+    NewsComponent,
+    SearchComponent,
+    ProfileComponent,
   ],
   imports: [
     BrowserModule,
