@@ -1,15 +1,20 @@
-@import '../../styles.scss';
 .headder{
   width:100vw;
   height: 10vh;
   background-color: var(--header);
-  box-shadow: 0px 10px 8px var(--shadow);
+  box-shadow: 0px 5px 8px var(--shadow);
   top: 0px;
   position: fixed;
+  z-index: -1;
 }
 
 .container {
+  height:10vh;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
   display: flex;
+  line-height: 10vh;
 }
 
 .item {
@@ -41,12 +46,4 @@ a{
   color: var(--text);
   font-size: 5vh;
   margin: 2.5vw;
-}
-
-a :hover{
-  -webkit-transform: scale(1.2);
-  -moz-transform: scale(1.2);
-  -o-transform: scale(1.2);
-  transform: scale(1.2);
-  color: var(--header-text-accent);
 }

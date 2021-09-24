@@ -66,7 +66,7 @@ input{
   --light: hsla(0, 0%, 99%, 1);
   --shadow-light: hsla(0, 0%, 74%, 1);
   --dark: hsla(180, 2%, 9%, 1);
-  --shadow-dark: hsla(0, 0%, 14%, 1);
+  --shadow-dark: hsla(0, 0%, 5%, 1);
   --header-200: hsla(210 , 100%, 10%, 1);
   --header-300: hsla(210 , 100%, 30%, 1);
   --header-500: hsla(43 , 100%, 50%, 1);
@@ -77,8 +77,10 @@ input{
   --shadow: var(--shadow-light);
   --background: var(--light);
   --header: var(--light);
-  --header-text-accent: var(--header-800);
+  --header-text-accent: var(--header-300);
   --text: var(--dark);
+  --text-second: var(--light);
+  --primary: var(--primary-500)
 }
 
 //dark theme
@@ -87,8 +89,10 @@ input{
     --background: var(--dark);
     --shadow: var(--shadow-dark);
     --header: var(--header-200);
+    --header-text-accent: var(--header-600);
     --text: var(--light);
-    --header-text-accent: var(--header-200)
+    --text-second: var(--dark);
+    --primary: var(--primary-200);
   }
 }
 
@@ -110,7 +114,11 @@ h1, h2, h3, h4, h5, h6{
 }
 
 h1{
-    font-size: 2em;
+  font-size: 2em;
+}
+
+h2{
+  font-size: 1.5em;
 }
 
 body{

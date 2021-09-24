@@ -1,10 +1,9 @@
-// TODO sticky nav bar top flex box
-// TODO Nav search and profile
+// TODO nav hides on scroll
+//* TODO search icon
+//! TODO search animation
+// TODO profile icon
 // TODO hover effect on text
-// TODO responsive navbar icons
-// TODO responsive header move position
-// TODO course service
-// TODO course search
+// TODO responsive navbar icons on bottom
 // TODO routing to pages
 //?     Courses
 //?     course/:courseid/:coursetitle
@@ -14,7 +13,11 @@
 //?     Not Found
 //?     profile/:userid
 //?     home
-// TODO Login
-// TODO lazy loading
+// TODO Firebase integration
+// TODO course service
+// TODO course search
+// TODO course load
+// TODO lazy loading of course
+// TODO sign in with google
+// TODO sign in with Git Hub
 // TODO Course title and scroll progress
-

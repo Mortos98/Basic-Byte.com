@@ -9,6 +9,8 @@ import { environment } from '../environments/environment';
 import { NewsComponent } from './news/news.component';
 import { SearchComponent } from './search/search.component';
 import { ProfileComponent } from './profile/profile.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { SearchCompetenciesComponent } from './search-competencies/search-competencies.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +19,7 @@ import { ProfileComponent } from './profile/profile.component';
     NewsComponent,
     SearchComponent,
     ProfileComponent,
+    SearchCompetenciesComponent,
   ],
   imports: [
     BrowserModule,
@@ -26,7 +29,8 @@ import { ProfileComponent } from './profile/profile.component';
       // Register the ServiceWorker as soon as the app is stable
       // or after 30 seconds (whichever comes first).
       registrationStrategy: 'registerWhenStable:30000'
-    })
+    }),
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
